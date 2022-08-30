@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Porto</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery-3.6.0.min.js"></script>
@@ -17,9 +18,29 @@
 <body>
   <header class="header">
     <div class="header__head">
-      <h1 class="logo"><a href="/"><img src="images/logo.png" alt=""></a></h1>
-      <div></div>
+      <h1 class="logo"><a href="/"><img src="images/logo.png" alt="porto"></a></h1>
+      <div class="menu_btn">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </div>
     </div>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">Elements</a></li>
+        <li><a href="#!">Pages</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Works</a></li>
+        <li><a href="#!">Blog</a></li>
+        <li><a href="#!">Shop</a></li>
+      </ul>
+      <div class="nav__close">
+        <span class="material-symbols-outlined">
+          close
+        </span>
+      </div>
+    </nav>
   </header>
   <main>
     <section class="section" id="section01">
@@ -44,40 +65,79 @@
       <div class="scaleWrap"></div>
     </section>
 
-    <footer class="section footer" id="section05">
+    <section class="section bottom" id="section05">
       <div class="scaleWrap">
-        <div class="footer__info">
-          <ul class="footer__lists">
+        <div class="bottom__info">
+          <ul class="bottom__lists bottomCenter">
             <li>
-              <div class="icon"></div>
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  phone_iphone
+                </span>
+              </div>
               <p class="listText01">Mobile Apps</p>
               <p class="listText02">Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
             </li>
             <li>
-              <div class="icon"></div>
+              <div class="icon"><span class="material-symbols-outlined">
+                  web_asset
+                </span></div>
               <p class="listText01">Creative Websites</p>
               <p class="listText02">Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
             </li>
             <li>
-              <div class="icon"></div>
+              <div class="icon">
+                <span class="material-symbols-outlined">
+                  search
+                </span>
+              </div>
               <p class="listText01">SEO Optimization</p>
               <p class="listText02">Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
             </li>
           </ul>
-          <div>
-            <div class="footerCenter">
-              <ul class="footer__contact">
-                <li>1234 Street Name, City Name</li>
-                <li>(800) 123-4567</li>
-                <li>mail@example.com</li>
+
+          <div class="bottom__contact">
+
+            <div class="bottomCenter bottom__flex">
+              <ul class="bottom__address">
+                <li>
+                  <span class="icon material-symbols-outlined">
+                    location_on
+                  </span>
+                  1234 Street Name, City Name</li>
+                <li>
+                  <span class="icon material-symbols-outlined">
+                    call
+                  </span>
+                  (800) 123-4567</li>
+                <li>
+                  <span class="icon material-symbols-outlined">
+                    mail
+                  </span>
+                  mail@example.com</li>
               </ul>
               <p class="copy">© Copyright 2021. All Rights Reserved.</p>
             </div>
+
           </div>
         </div>
 
+        <div class="bottom__last">
+
+          <div class="bottom__banner">
+            <p class="banner_text01">Create your new website now!</p>
+            <p class="banner_text02">Porto Admin Integration - 100% Fully Responsive - Retina Ready - Google Fonts - Super Fast Top-Level Support - Customizable - RTL Support - SEO Friendly</p>
+            <a href="#!" class="linkBtn">VIEW PORTO</a>
+          </div>
+
+          <video class="bottom__vod" autoplay="" loop="" muted="" playsinline="">
+            <source src="images/bg_vod.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
       </div>
-    </footer>
+    </section>
   </main>
   <ul class="quickNav">
     <li></li>
@@ -90,7 +150,9 @@
   <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage');
   </script> -->
+  <footer></footer>
   <script src="js/scroll.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

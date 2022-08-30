@@ -1,5 +1,4 @@
 // 현재 완성
-// window.scrollTo(0, 300)
 
 
 $(window).on('load', function () {
@@ -11,7 +10,6 @@ $(window).on('load', function () {
   $("html, body").animate({
     scrollTop: 0
   }, 20);
-
 
 
   //스크롤 자동이동

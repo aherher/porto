@@ -81,10 +81,20 @@
      &__head {
        width: 95%;
        margin: 0 auto;
+       @include flexCenter;
      }
 
      .logo {
        width: 8.2rem;
+     }
+
+     .menu_btn {
+       cursor: pointer;
+
+       span {
+         color: #fff;
+         font-size: 4rem;
+       }
      }
 
      &.hide {
@@ -92,9 +102,58 @@
      }
    }
 
-   .footer {
-     &__info {
-       height: 50vh;
-       background-color: #212529;
+   .nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #323334;
+     transition: opacity 0.7s;
+     visibility: hidden;
+     opacity: 0;
+
+     &.openedNav {
+       visibility: visible;
+       opacity: 1;
+     }
+
+     &__menu {
+       text-align: center;
+
+       @include centerC(absolute);
+
+       li {
+         &:not(:last-child) {
+           margin-bottom: 2rem;
+         }
+
+         a {
+           display: block;
+           color: #fff;
+           font-size: clamp(2.5rem, 4vw, 5rem);
+           font-weight: 500;
+           transition: all 0.3s;
+
+           &:hover {
+             transform: translateX(1rem);
+             color: #08c;
+           }
+         }
+       }
+     }
+
+     &__close {
+       cursor: pointer;
+       position: absolute;
+       right: 2.5%;
+       height: 9rem;
+       @include flexAlign;
+
+
+       span {
+         color: #fff;
+         font-size: 4rem;
+       }
      }
    }
